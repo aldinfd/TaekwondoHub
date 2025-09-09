@@ -81,8 +81,8 @@ const ResetPasswordPage = () => {
                     <span className="text-red-500 text-xs">{form.formState.errors.passwordConfirm?.message}</span>
                 </label>
                 <button className="bg-gray-500 text-white py-1 px-4 w-1/2">Reset</button>
-                <button className="bg-gray-500 text-white py-1 px-4 w-1/3 mt-2"><Link to="/">Kembali</Link></button>
             </form>
+            <button className="bg-gray-500 text-white py-1 px-4 w-1/3 mt-2"><Link to="/">Kembali</Link></button>
         </div>
     )
 }
