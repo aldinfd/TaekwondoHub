@@ -1,10 +1,15 @@
+import { Route, Routes } from "react-router"
 import LoginPage from "./pages/LoginPage"
+import ResetPasswordPage from "./pages/ResetPasswordPage"
 
 const App = () => {
   return (
-    <div>
-      <LoginPage />
-    </div>
+    <>
+      <Routes>
+        <Route path="/" element={<LoginPage />} />
+        <Route path="/reset-password" element={<ResetPasswordPage />} />
+      </Routes>
+    </>
   )
 }
 

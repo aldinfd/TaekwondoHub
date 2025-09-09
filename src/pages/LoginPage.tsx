@@ -1,6 +1,7 @@
 import { zodResolver } from "@hookform/resolvers/zod"
 import { useState } from "react"
 import { useForm } from "react-hook-form"
+import { Link } from "react-router"
 import z from "zod"
 
 const LoginPage = () => {
@@ -63,7 +64,7 @@ const LoginPage = () => {
                     </div>
                     <span className="text-red-500 text-xs">{form.formState.errors.password?.message}</span>
                 </label>
-                <a href="#" className="text-sm text-blue-500">Lupa Password</a>
+                <Link to="/reset-password" className="text-xs text-blue-500">Lupa Password</Link>
                 <button className="bg-gray-500 text-white py-1 px-4 w-1/2">Login</button>
                 <label htmlFor="#">
                     <input type="checkbox" />
